@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal PortFolio WebSite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#family">FamilyDetail</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" id="home">
+                <p>Java Developer</p>
+                <h1>Hi,I'm <span>Mritunjay</span> <br> From <small>Begusarai</small></h1>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ----About ----->
+    <div id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg1.jpg" alt="">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h3 class="about-title">About Me</h3> 
+                    <p class="about-me">I am a passionate Java Developer with 2.5 years of experience at Amdocs, specializing in building scalable and efficient backend solutions. My expertise lies in Java, Spring Boot, Microservices, and database management, enabling me to develop robust applications that enhance business processes. I thrive in problem-solving, optimizing performance, and ensuring seamless system integration. At Amdocs, I have worked on complex telecom projects, gaining hands-on experience in API development, cloud technologies, and agile methodologies. I am always eager to learn and explore new technologies to improve my coding skills and deliver innovative solutions in the ever-evolving tech landscape.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App For AT&T</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025-Current</span><br>Senior Developer</li>
+                            <li><span>2022-2023</span>Associate Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015</span><br>Vikas vidyalaya</li>
+                            <li><span>2017</span><br>Sri Chaitanya</li>
+                            <li><span>2022</span><br>Sinhgad College of Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------servives---- -->
+     <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design blends creativity and coding to craft user-friendly, responsive websites. It involves UI/UX, typography, color theory, and modern technologies like HTML, CSS, JavaScript, and CMS platforms for stunning digital experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>We create stunning, responsive websites tailored to your brand. Our services include UI/UX design, custom development, SEO optimization, and mobile-friendly layouts to enhance your online presence and user experience</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>App Design</h2>
+                    <p>We design intuitive, user-friendly mobile apps with stunning UI/UX. Our services include wireframing, and seamless functionality to enhance user engagement and business growth across iOS and Android platforms</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ---Portfolio ------>
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.download it from play store</p>
+                        <a href=""><i class="fa-solid fa-anchor"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.download it from play store</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you to the talented people around the world.download it from play store</p>
+                        <a href=""><i class="fa-regular fa-square-arrow-up-right"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+
+    <!----- FamilyDetail ---->
+    <div class="familyDetails" id="family">
+        <h2 class="sub-title">Family Details</h2>
+        <p><strong>Father's Name:</strong> Ram Shankar Singh</p>
+        <p><strong>Father's Occupation:</strong> Farmer</p>
+        <p><strong>Mother's Name:</strong> Ranju Devi</p>
+        <p><strong>Sisters' Names:</strong><ul>
+            <li>Kalyani Singh</li>
+            <li>Lovely Singh</li>
+            <li>Aarti Singh</li>
+        </ul></p>
+       
+        <p><strong>Grandfather's Name:</strong> Ram Deep Singh</p>
+        <p><strong>Address:</strong> Ward no.04 Machaha PO:Ulao Dist:Begusarai</p>
+    </div>
+    
+
+      <!----- Contact ------>
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i>kumarmritunjay1227@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7499377417</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images/my-cv.pdf" download class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="txtarea" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @MJ .Made by <i class="fa-solid fa-heart"></i> Mritunjay</p>
+        </div>
+      </div>
+      
+    <script>
+        var tabLinks=document.getElementsByClassName("tab-links")
+        var tabContents=document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link")
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right=""
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwoowTtiZnRkOaubBmFHzfOvDMnO3KQm21QehtyLE8B1lG9UA7VXNgf6BXkqjdj7Hw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+            })
+            form.reset()
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
